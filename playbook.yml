@@ -5,8 +5,10 @@
       yum:
         name: vsftpd
         state: present
+      tags: ['never','alpha']
 
     - name: install httpd
       yum:
          name: httpd
          state: present
+      tags: ['never','beta']
